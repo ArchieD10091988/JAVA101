@@ -1,0 +1,85 @@
+package ph.com.bpi.hello;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("Hello dfsfWorld!!!");
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		String myName = "Archie";
+		
+		
+		
+		System.out.println("Hello : " + myName + "!");
+		
+		
+		double ako = 213.99;
+		int siya = (int) ako;
+		
+		System.out.println("Hello : " + siya + "!");
+		
+		
+		int ako2 = 22;
+		double siya2 = ako2;
+		System.out.println("Hello : " + siya2 + "!");
+		
+		
+		int ako3 = Integer.parseInt("123");
+		double siya3 = Double.parseDouble("9.99");
+		
+		System.out.println("Hello : " + ako3 + "!" + siya3);
+		
+		/*
+		 * System.out.print("What is your age ? ");
+		 * 
+		 * String myAge = scanner.nextLine();
+		 * 
+		 * int ako4 = Integer.parseInt(myAge); double siya4 = Double.parseDouble(myAge);
+		 * 
+		 * System.out.println("Your age as int is : " + ako4 + "!");
+		 * System.out.println("Your age as double is : " + siya4 + "!");
+		 */
+		
+		display();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	public static void display()
+	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Input unang numero : ");
+		
+		int num1 = Integer.parseInt(scanner.nextLine());
+		
+		System.out.print("Input pangalawang numero : ");
+		
+		int num2 = Integer.parseInt(scanner.nextLine());
+
+		int sum = num1 + num2;
+		int diff = num1 - num2;
+		int prod = num1 * num2;
+		int quotient = num1 / num2;
+		int remainder = num1 % num2;
+		
+		
+		System.out.println("The sum is : " + sum + "!");
+		System.out.println("The difference is : " + diff + "!");
+		System.out.println("The product is : " + prod + "!");
+//		System.out.println("The quotient is : " + quotient + "!");
+//		System.out.println("The remainder is : " + remainder + "!");
+		scanner.close();
+	}
+	
+}
