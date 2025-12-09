@@ -1,0 +1,37 @@
+1. The 2 daily dataset : BPP.IMX.RL63.BTI.LOANPRIN.MMMD1YY & BPP.IMX.RL63.BTI.LOANINTR.MMMD1YY are currently the input dataset to form
+the monthly PSLOAN.
+
+2. The said 2 daily dataset are a daily accumulation of records from first day of the month up to the last. 
+
+3. To form the 'Daily PSLOAN', we just need to consider the below : 
+
+- Merge the 2 daily dataset and filter the transaction date field : PSLOAN-TRANDAT with date format (YYMMDD) equal to the process date / batch date 
+- Once merge, remove the first 2 character of field : PSLOAN-DEAL-NO
+
+
+
+https://github.com/rlimosenero/bpi-training.git
+
+
+
+git clone https://github.com/rlimosenero/bpi-training.git
+
+
+git clone https://github.com/jpmenguito/oop-training.git
+
+
+git init
+git remote add origin https://github.com/ArchieD10091988/Module2.git
+git branch -M main
+git add .
+git commit -m "Comment here"
+git push -u origin main
+
+
+
+
+git add .
+git add test2.txt
+ 
+git status
+git restore --stage test2.txt
